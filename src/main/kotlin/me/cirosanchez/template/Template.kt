@@ -1,5 +1,6 @@
 package me.cirosanchez.template
 
+import me.cirosanchez.blaze.configuration.ConfigurationProvider
 import me.cirosanchez.template.extension.Symbol
 import net.kyori.adventure.text.minimessage.MiniMessage
 import org.bukkit.plugin.java.JavaPlugin
@@ -13,7 +14,10 @@ class Template : JavaPlugin() {
         val mm = MiniMessage.miniMessage();
     }
 
+    lateinit var configurationProvider: ConfigurationProvider
+
     override fun onEnable() {
         this.logger.info("Plugin activated!")
+        configurationProvider = ConfigurationProvider(this)
     }
 }

@@ -65,4 +65,8 @@ enum class Symbol(val symbol: String) {
     PENCIL("✎"),
     TICK("✓"),
     CROSS("✖");
+
+    override fun toString(): String {
+        return symbol
+    }
 }

@@ -1,5 +1,6 @@
 plugins {
     kotlin("jvm") version "1.9.21"
+    id("com.github.johnrengelman.shadow") version("8.1.1")
 }
 
 //TODO: Change group and version.
@@ -25,8 +26,6 @@ dependencies {
 
     // twilight
     implementation("gg.flyte:twilight:1.1.7")
-
-
 }
 
 tasks.test {
