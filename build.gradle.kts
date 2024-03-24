@@ -15,6 +15,7 @@ repositories {
     maven("https://repo.papermc.io/repository/maven-public/")
     maven("https://jitpack.io")
     maven("https://repo.flyte.gg/releases")
+    maven("https://repo.extendedclip.com/content/repositories/placeholderapi/")
 }
 
 dependencies {
@@ -26,6 +27,9 @@ dependencies {
 
     // twilight
     implementation("gg.flyte:twilight:1.1.7")
+
+    // PlaceholderAPI
+    compileOnly("me.clip:placeholderapi:2.11.5")
 }
 
 tasks.test {
