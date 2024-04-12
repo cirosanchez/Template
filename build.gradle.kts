@@ -1,6 +1,7 @@
 plugins {
     kotlin("jvm") version "1.9.21"
     id("com.github.johnrengelman.shadow") version("8.1.1")
+    id("xyz.jpenilla.run-paper") version "2.2.2"
 }
 
 //TODO: Change group and version.
@@ -32,9 +33,10 @@ dependencies {
     compileOnly("me.clip:placeholderapi:2.11.5")
 }
 
-tasks.test {
-    useJUnitPlatform()
-}
 kotlin {
     jvmToolchain(17)
+}
+
+tasks.runServer {
+    minecraftVersion("1.20.4")
 }

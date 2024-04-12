@@ -1,4 +1,4 @@
-package me.cirosanchez.blaze.configuration
+package dev.cirosanchez.template.configuration
 
 import org.bukkit.plugin.Plugin
 

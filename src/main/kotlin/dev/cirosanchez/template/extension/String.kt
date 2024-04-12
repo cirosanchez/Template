@@ -1,8 +1,7 @@
-package me.cirosanchez.template.extension
+package dev.cirosanchez.template.extension
 
-import me.cirosanchez.template.Template
+import dev.cirosanchez.template.Template
 import net.kyori.adventure.text.Component
-import net.kyori.adventure.text.minimessage.MiniMessage
 import org.bukkit.ChatColor
 import org.bukkit.ChatColor.COLOR_CHAR
 import java.util.regex.Matcher
